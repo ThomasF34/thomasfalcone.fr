@@ -1,5 +1,5 @@
 # Change these
-server 'thomasfalcone.fr', roles: [:web, :app, :db], primary: true
+server '185.216.27.115', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:ThomasF34/thomasfalcone.fr.git'
 set :application,     'thomasfalcone_website'
@@ -31,7 +31,7 @@ set :puma_init_active_record, false  # Change to true if using ActiveRecord
 # set :keep_releases, 5
 
 ## Linked Files & Directories (Default None):
-# set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/master.key config/database.yml}
 # set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
