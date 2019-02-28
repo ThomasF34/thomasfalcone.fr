@@ -11,7 +11,20 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery3
+//= require jquery_ujs
 //= require activestorage
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(window).on('load', function(){
+        $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                        $('nav').addClass('shrink');
+                } else {
+                        $('nav').removeClass('shrink');
+                }
+        });
+
+})

@@ -65,6 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap'
 gem 'minitest-reporters' 
+gem 'jquery-rails'
 
 group :development do
     gem 'capistrano',         require: false
