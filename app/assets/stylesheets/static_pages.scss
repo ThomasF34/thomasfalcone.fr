@@ -14,6 +14,10 @@
         overflow: auto;
 }
 
+header{
+        height: 250px; 
+        background-color:#3498db;
+}
 
 #triangle-path-1 {
         fill: #3498db;
@@ -25,3 +29,11 @@
         stroke: #2072a7;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
+#me-img{
+        max-width: 200px;
+	box-shadow: 5px 10px 10px #2072a7;
+}
